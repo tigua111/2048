@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>2048</h1>
+      <div class="score-box">
+        <div class="score-panel">
+          <div>分數</div>
+          <strong id="score">0</strong>
+        </div>
+        <div class="score-panel">
+          <div>最佳</div>
+          <strong id="best-score">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="game-info">
+        <p>方向鍵控制遊戲。現在是 4x4 版本，滑動時會有動畫效果。</p>
+      </div>
+
+      <div class="game-container">
+        <div class="grid-container">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="tile-container" id="tile-container"></div>
+      </div>
+
+      <div class="controls">
+        <button id="restart-btn">重新開始</button>
+      </div>
+
+      <div class="bottom-bar" id="bottom-bar">
+        <button id="auto-play-btn">啟動自動遊玩</button>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
